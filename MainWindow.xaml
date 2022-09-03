@@ -1,0 +1,42 @@
+﻿<pu:WindowX x:Class="PFL_MC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PFL_MC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox Height="30"
+          x:Name="versionCombo" Margin="10,10,581,379"/>
+        <Button Height="30"
+        Width="200"
+        Content="启动" Margin="582,379,10,10" Click="Button_Click"/>
+        <ComboBox Height="30"
+          Width="200"
+          HorizontalAlignment="Left"
+          x:Name="javaCombo"
+          DisplayMemberPath="Version"
+          SelectedValuePath="Path"
+          VerticalAlignment="Top"
+          Margin="30,70,0,0"/>
+        <TextBox Height="30"
+          Width="200"
+          x:Name="IdTextbox"
+          pu:TextBoxHelper.Watermark="PlaceHolder"
+          pu:TextBoxHelper.CornerRadius="15"
+          HorizontalAlignment="Right"
+          VerticalAlignment="Bottom"
+          Margin="0,0,30,100"/>
+        <TextBox Height="30"
+          Width="200"
+          x:Name="MemoryTextbox"
+          Text="1024"
+          pu:TextBoxHelper.Watermark="PlaceHolder"
+          pu:TextBoxHelper.CornerRadius="15"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top"
+          Margin="30,110,0,0"/>
+    </Grid>
+</pu:WindowX>
